@@ -1,0 +1,2018 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="王政的商业摄影作品集，涵盖食品摄影、产品静物、电商白底图、品牌海报与视频内容制作。"
+    />
+    <meta name="theme-color" content="#f3f0e8" />
+    <title>王政｜商业摄影师与拍摄剪辑师</title>
+    <link rel="icon" href="./favicon.svg" />
+    <style>
+:root {
+  --font-geist-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --paper: #f3f0e8;
+  --ink: #11110f;
+  --muted: #77736b;
+  --line: #d5d0c7;
+  --wine: #84262d;
+  --wine-dark: #671b21;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.site-header {
+  height: 90px;
+  margin: 0 4.45vw;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.wordmark {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.wordmark span {
+  font-weight: 400;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: clamp(34px, 4.5vw, 74px);
+  font-size: 14px;
+}
+
+.desktop-nav a {
+  position: relative;
+  padding: 10px 0;
+}
+
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  left: 0;
+  height: 1px;
+  background: var(--wine);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.desktop-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.desktop-nav span {
+  margin-left: 5px;
+}
+
+.menu-link {
+  display: none;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.hero {
+  min-height: 760px;
+  padding: 70px 4.45vw 84px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(220px, .72fr) minmax(360px, 1.28fr);
+  align-content: center;
+  column-gap: clamp(40px, 8vw, 150px);
+  animation: rise-in 700ms ease both;
+}
+
+.eyebrow,
+.section-index {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  grid-column: 1 / -1;
+  color: var(--wine);
+}
+
+.hero h1 {
+  margin: 0;
+  grid-column: 1 / -1;
+  font-family: "Times New Roman", "Songti SC", serif;
+  font-size: clamp(122px, 16.4vw, 246px);
+  font-weight: 400;
+  line-height: 0.64;
+  letter-spacing: -0.085em;
+}
+
+.hero h1 span {
+  display: block;
+  margin-left: 0.34em;
+}
+
+.hero h2 {
+  margin: 52px 0 0;
+  grid-column: 1;
+  grid-row: 3 / 5;
+  font-size: clamp(44px, 4.2vw, 64px);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.hero-role {
+  margin: 52px 0 0;
+  grid-column: 2;
+  font-size: clamp(20px, 2vw, 29px);
+  letter-spacing: 0.05em;
+}
+
+.hero-tags {
+  margin: 15px 0 0;
+  grid-column: 2;
+  font-size: 17px;
+  letter-spacing: 0.08em;
+}
+
+.hero-actions {
+  margin-top: 42px;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.primary-button {
+  width: 224px;
+  height: 62px;
+  padding: 0 30px;
+  background: var(--wine);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+  letter-spacing: 0.08em;
+  transition: background 180ms ease;
+}
+
+.primary-button:hover {
+  background: var(--wine-dark);
+}
+
+.primary-button span {
+  font-size: 25px;
+  transition: transform 180ms ease;
+}
+
+.primary-button:hover span {
+  transform: translateX(7px);
+}
+
+.hero-actions p {
+  margin: 0;
+  padding-left: 30px;
+  border-left: 1px solid var(--line);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 12px;
+  letter-spacing: 0.13em;
+}
+
+.hero-actions strong {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.work-section,
+.about-section,
+.experience-section,
+footer {
+  padding: 130px 4.45vw;
+}
+
+.work-section {
+  background: #161613;
+  color: #f1ede5;
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 82px;
+}
+
+.section-heading .section-index {
+  align-self: start;
+  color: #a29c90;
+}
+
+.section-heading h2,
+.about-layout h2,
+.footer-main h2 {
+  margin: 0;
+  font-family: "Times New Roman", "Songti SC", serif;
+  font-size: clamp(48px, 5.4vw, 80px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+
+.section-intro {
+  margin: 0;
+  color: #b0aaa0;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 72px 24px;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 38px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #403f39;
+}
+
+.filter-bar button {
+  padding: 8px 17px;
+  border: 1px solid #4e4b44;
+  background: transparent;
+  color: #aaa49a;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.filter-bar button:hover,
+.filter-bar button.is-active {
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.filter-bar p {
+  margin: 0 0 0 auto;
+  color: #827c72;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.project-card > button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.project-image {
+  height: clamp(330px, 38vw, 580px);
+  position: relative;
+  overflow: hidden;
+  background: #2b2a25;
+}
+
+.project-card--tall .project-image {
+  height: clamp(440px, 48vw, 680px);
+}
+
+.project-image img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms cubic-bezier(.2,.8,.2,1), filter 300ms ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.035);
+  filter: brightness(1.05);
+}
+
+.project-card--landscape {
+  grid-column: 1 / -1;
+}
+
+.project-card--landscape .project-image {
+  height: clamp(400px, 46vw, 650px);
+}
+
+.project-card--landscape .project-image img {
+  object-position: center;
+}
+
+.project-image--video > img {
+  filter: saturate(.82) contrast(1.04);
+}
+
+.project-card:hover .project-image--video > img {
+  filter: saturate(.95) contrast(1.04) brightness(1.04);
+}
+
+.project-arrow {
+  width: 54px;
+  height: 54px;
+  background: var(--paper);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 22px;
+  transform: translateY(100%);
+  transition: transform 220ms ease;
+}
+
+.project-image--video .project-arrow {
+  display: none;
+}
+
+.video-cover {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  padding: clamp(20px, 2.1vw, 32px);
+  border: 1px solid rgba(255,255,255,.18);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(12,12,11,.7) 0%, rgba(12,12,11,.06) 34%, rgba(12,12,11,.18) 55%, rgba(12,12,11,.88) 100%),
+    linear-gradient(90deg, rgba(132,38,45,.44) 0, transparent 14%);
+  text-shadow: 0 2px 18px rgba(0,0,0,.3);
+  transition: background 280ms ease;
+}
+
+.video-cover::before {
+  content: "";
+  width: 3px;
+  position: absolute;
+  top: clamp(20px, 2.1vw, 32px);
+  bottom: clamp(20px, 2.1vw, 32px);
+  left: 0;
+  background: #c14a52;
+}
+
+.project-card:hover .video-cover {
+  background:
+    linear-gradient(180deg, rgba(12,12,11,.64) 0%, rgba(12,12,11,.02) 34%, rgba(12,12,11,.12) 55%, rgba(12,12,11,.82) 100%),
+    linear-gradient(90deg, rgba(132,38,45,.52) 0, transparent 16%);
+}
+
+.video-cover__top,
+.video-cover__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: clamp(7px, .7vw, 10px);
+  letter-spacing: .17em;
+}
+
+.video-cover__top {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  color: rgba(255,255,255,.78);
+}
+
+.video-cover__title {
+  margin-top: auto;
+  padding-bottom: clamp(24px, 3.2vw, 50px);
+}
+
+.video-cover__title p {
+  margin: 0 0 10px;
+  color: #e8bdba;
+  font-size: clamp(10px, .9vw, 13px);
+  letter-spacing: .12em;
+}
+
+.video-cover__title h4 {
+  max-width: 88%;
+  margin: 0;
+  font-family: "Times New Roman", "Songti SC", serif;
+  font-size: clamp(34px, 4vw, 62px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.video-cover__footer {
+  min-height: 52px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.3);
+}
+
+.video-cover__footer p {
+  margin: 0 auto 0 13px;
+}
+
+.video-cover__play {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,.75);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding-left: 2px;
+  font-size: 10px;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.project-card:hover .video-cover__play,
+.modal-video-cover:hover .video-cover__play {
+  background: #fff;
+  color: var(--wine);
+  transform: scale(1.06);
+}
+
+.project-card:hover .project-arrow {
+  transform: translateY(0);
+}
+
+.project-meta {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 18px;
+}
+
+.project-meta > div {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.project-meta span,
+.project-meta p {
+  color: #928c81;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.project-meta h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.project-meta p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.about-section {
+  border-bottom: 1px solid var(--line);
+}
+
+.about-section > .section-index,
+.experience-section > .section-index {
+  margin: 0 0 70px;
+  color: var(--wine);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 10vw;
+}
+
+.about-copy {
+  padding-top: 10px;
+}
+
+.about-copy > p {
+  margin: 0 0 24px;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.capability-list {
+  margin-top: 52px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+}
+
+.capability-list span {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.resume-button {
+  width: 100%;
+  margin-top: 34px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.resume-button span {
+  font-size: 22px;
+  transition: transform 180ms ease;
+}
+
+.resume-button:hover span {
+  transform: translateX(6px);
+}
+
+.experience-section {
+  padding-bottom: 160px;
+}
+
+.experience-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.4fr;
+  gap: 30px;
+  padding: 34px 0 46px;
+  border-top: 1px solid var(--line);
+}
+
+.experience-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-row p {
+  margin: 0;
+}
+
+.experience-date {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.experience-row h3 {
+  margin: 0 0 10px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.experience-row > div p {
+  color: var(--wine);
+  font-size: 14px;
+}
+
+.experience-detail {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.resume-extra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.resume-extra-grid article {
+  min-height: 190px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resume-extra-grid .section-index {
+  margin: 0;
+  color: var(--wine);
+}
+
+.resume-extra-grid h3 {
+  margin: 48px 0 12px;
+  font-family: "Times New Roman", "Songti SC", serif;
+  font-size: clamp(26px, 2.5vw, 38px);
+  font-weight: 400;
+}
+
+.resume-extra-grid article > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer {
+  padding-bottom: 38px;
+  background: var(--wine);
+  color: white;
+}
+
+footer .section-index {
+  margin: 0 0 70px;
+  color: #e4b9b8;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: end;
+  padding-bottom: 110px;
+}
+
+.footer-main h2 {
+  font-size: clamp(56px, 7vw, 104px);
+}
+
+.contact-block > p:first-child {
+  color: #e4b9b8;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.contact-block > a {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,.45);
+  font-family: "Times New Roman", serif;
+  font-size: clamp(22px, 2.6vw, 38px);
+}
+
+.contact-note {
+  color: #e4b9b8;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.35);
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.project-modal {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  padding: 40px;
+  background: rgba(13, 12, 10, .86);
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(7px);
+  animation: modal-in 180ms ease both;
+}
+
+.modal-panel {
+  width: min(1120px, 100%);
+  max-height: calc(100vh - 80px);
+  overflow: auto;
+  background: var(--paper);
+  display: grid;
+  grid-template-columns: 1.05fr .65fr;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+  padding: 10px 13px;
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+
+.modal-media {
+  height: min(72vh, 720px);
+  min-height: 560px;
+  position: relative;
+  background: #e6e1d7;
+  overflow: hidden;
+}
+
+.modal-media > img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+}
+
+.modal-media > video {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+  background: #11110f;
+}
+
+.modal-video-cover {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #11110f;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.modal-video-cover > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  filter: saturate(.82) contrast(1.05);
+  transition: transform 600ms cubic-bezier(.2,.8,.2,1);
+}
+
+.modal-video-cover:hover > img {
+  transform: scale(1.025);
+}
+
+.video-cover--modal {
+  padding: clamp(26px, 3vw, 46px);
+}
+
+.video-cover--modal::before {
+  top: clamp(26px, 3vw, 46px);
+  bottom: clamp(26px, 3vw, 46px);
+}
+
+.video-cover--modal .video-cover__title h4 {
+  max-width: 95%;
+  font-size: clamp(42px, 5.3vw, 74px);
+}
+
+.modal-play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  color: white;
+  background: rgba(17,17,15,.12);
+  text-shadow: 0 2px 18px rgba(0,0,0,.3);
+}
+
+.modal-play span {
+  width: 74px;
+  height: 74px;
+  border: 1px solid rgba(255,255,255,.85);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding-left: 4px;
+  font-size: 23px;
+}
+
+.modal-play p {
+  margin: 14px 0 0;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 9px;
+  letter-spacing: .16em;
+}
+
+.modal-copy {
+  padding: 92px 46px 48px;
+}
+
+.modal-copy .section-index {
+  color: var(--wine);
+}
+
+.modal-copy h2 {
+  margin: 24px 0 30px;
+  font-family: "Times New Roman", "Songti SC", serif;
+  font-size: clamp(44px, 4vw, 64px);
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.modal-copy > p:nth-of-type(2) {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.modal-details {
+  margin-top: 54px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 15px;
+}
+
+.modal-details span {
+  color: var(--wine);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 9px;
+  letter-spacing: .1em;
+}
+
+.modal-details p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@keyframes modal-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes image-reveal {
+  from { opacity: 0; clip-path: inset(0 0 100% 0); }
+  to { opacity: 1; clip-path: inset(0); }
+}
+
+@media (max-width: 900px) {
+  .desktop-nav { display: none; }
+  .menu-link { display: block; }
+  .hero {
+    min-height: auto;
+    padding: 58px 4.45vw 80px;
+  }
+  .hero-copy { width: 100%; }
+  .hero h1 { font-size: clamp(100px, 19vw, 164px); }
+  .section-heading { grid-template-columns: 1fr; }
+  .section-intro { max-width: 520px; }
+  .about-layout,
+  .footer-main { grid-template-columns: 1fr; }
+  .about-copy { max-width: 620px; }
+  .experience-row { grid-template-columns: 1fr 1.5fr; }
+  .experience-detail { grid-column: 2; }
+  .resume-extra-grid { grid-template-columns: 1fr; }
+  .modal-panel { grid-template-columns: 1fr; }
+  .modal-media { height: 58vh; min-height: 480px; }
+  .modal-copy { padding: 60px 36px 44px; }
+}
+
+@media (max-width: 620px) {
+  .site-header { height: 72px; }
+  .wordmark { font-size: 20px; }
+  .hero { padding-top: 48px; padding-bottom: 64px; }
+  .hero-copy {
+    padding-bottom: 30px;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  .eyebrow { font-size: 9px; }
+  .hero h1 { font-size: clamp(78px, 24vw, 112px); }
+  .hero h1 span { margin-left: .16em; }
+  .hero h2 {
+    margin-top: 34px;
+    grid-column: 1;
+    grid-row: auto;
+    font-size: 38px;
+  }
+  .hero-role {
+    margin-top: 26px;
+    grid-column: 1;
+    font-size: 18px;
+  }
+  .hero-tags {
+    margin-top: 14px;
+    grid-column: 1;
+    font-size: 13px;
+  }
+  .hero-actions { gap: 16px; margin-top: 28px; }
+  .primary-button { width: 174px; height: 52px; padding: 0 20px; font-size: 14px; }
+  .hero-actions p { padding-left: 16px; font-size: 8px; }
+  .work-section,
+  .about-section,
+  .experience-section,
+  footer { padding: 88px 4.45vw; }
+  .project-grid { grid-template-columns: 1fr; gap: 54px; }
+  .filter-bar { flex-wrap: wrap; }
+  .filter-bar button { padding: 7px 11px; }
+  .filter-bar p { width: 100%; margin: 8px 0 0; }
+  .project-image,
+  .project-card--tall .project-image { height: 115vw; max-height: 560px; }
+  .project-card--landscape { grid-column: auto; }
+  .project-card--landscape .project-image { height: 68vw; }
+  .project-meta h3 { font-size: 18px; }
+  .project-meta p { display: none; }
+  .video-cover { padding: 20px; }
+  .video-cover::before { top: 20px; bottom: 20px; }
+  .video-cover__title { padding-bottom: 25px; }
+  .video-cover__title h4 { max-width: 96%; font-size: clamp(32px, 10vw, 48px); }
+  .about-layout { gap: 48px; }
+  .experience-row { grid-template-columns: 1fr; gap: 18px; }
+  .experience-detail { grid-column: 1; }
+  .footer-main { padding-bottom: 80px; }
+  .footer-bottom p:last-child { display: none; }
+  .project-modal { padding: 12px; }
+  .modal-panel { max-height: calc(100vh - 24px); }
+  .modal-media { height: 48vh; min-height: 320px; }
+  .video-cover--modal .video-cover__title h4 { font-size: clamp(34px, 10vw, 48px); }
+  .modal-copy { padding: 50px 22px 34px; }
+  .modal-close { top: 10px; right: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="返回首页">
+          WANG ZHENG <span>/ 王政</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+          <a href="#work">WORK <span>作品</span></a>
+          <a href="#about">ABOUT <span>关于</span></a>
+          <a href="#experience">EXPERIENCE <span>经历</span></a>
+          <a href="#contact">CONTACT <span>联系</span></a>
+        </nav>
+        <a class="menu-link" href="#work">MENU</a>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">COMMERCIAL PHOTOGRAPHER · FUZHOU</p>
+          <h1>
+            WANG
+            <span>ZHENG</span>
+          </h1>
+          <h2>王政</h2>
+          <p class="hero-role">商业摄影师 · 拍摄剪辑师</p>
+          <p class="hero-tags">
+            食品摄影&nbsp; / &nbsp;产品静物&nbsp; / &nbsp;电商视觉
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#work">
+              观看作品 <span aria-hidden="true">→</span>
+            </a>
+            <p><strong>2+</strong> YEARS / FUZHOU</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section" id="work">
+        <div class="section-heading">
+          <p class="section-index">01 — SELECTED WORK</p>
+          <h2>让质感可见，<br />让卖点被理解。</h2>
+          <p class="section-intro">
+            真实作品涵盖食品摄影、商业静物、工业产品白底图、品牌海报与商业视频，点击项目可查看大图或直接播放。
+          </p>
+        </div>
+
+        <div class="filter-bar" aria-label="作品类型筛选">
+          
+      <button
+        class="is-active"
+        data-filter="all"
+        type="button"
+      >
+        全部
+      </button>
+    
+      <button
+        class=""
+        data-filter="food"
+        type="button"
+      >
+        食品摄影
+      </button>
+    
+      <button
+        class=""
+        data-filter="commercial"
+        type="button"
+      >
+        商业静物
+      </button>
+    
+      <button
+        class=""
+        data-filter="white"
+        type="button"
+      >
+        白底图
+      </button>
+    
+      <button
+        class=""
+        data-filter="poster"
+        type="button"
+      >
+        海报
+      </button>
+    
+      <button
+        class=""
+        data-filter="video"
+        type="button"
+      >
+        视频作品
+      </button>
+    
+          <p><span id="project-count">18</span> PROJECTS</p>
+        </div>
+
+        <div class="project-grid">
+          
+      <article
+        class="project-card project-card--tall"
+        data-kind="food"
+        data-project-id="01"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="01"
+          aria-label="查看荔枝肉 · 热气氛围项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/food-litchi-pork.webp"
+              alt="荔枝肉 · 热气氛围"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>01</span>
+              <h3>荔枝肉 · 热气氛围</h3>
+            </div>
+            <p>食品摄影 / 2024</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card "
+        data-kind="food"
+        data-project-id="02"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="02"
+          aria-label="查看花蛤蒸蛋 · 浇汁瞬间项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/food-clam-egg.webp"
+              alt="花蛤蒸蛋 · 浇汁瞬间"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>02</span>
+              <h3>花蛤蒸蛋 · 浇汁瞬间</h3>
+            </div>
+            <p>食品摄影 / 2024</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="food"
+        data-project-id="03"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="03"
+          aria-label="查看牛肉丸粿条 · 暖冬项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/food-beef-noodle.webp"
+              alt="牛肉丸粿条 · 暖冬"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>03</span>
+              <h3>牛肉丸粿条 · 暖冬</h3>
+            </div>
+            <p>食品摄影 / 2024</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card "
+        data-kind="commercial"
+        data-project-id="04"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="04"
+          aria-label="查看AHC · 草本护肤静物项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/product-ahc.webp"
+              alt="AHC · 草本护肤静物"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>04</span>
+              <h3>AHC · 草本护肤静物</h3>
+            </div>
+            <p>商业静物 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="commercial"
+        data-project-id="05"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="05"
+          aria-label="查看洗护产品 · 自然配方项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/product-shampoo.webp"
+              alt="洗护产品 · 自然配方"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>05</span>
+              <h3>洗护产品 · 自然配方</h3>
+            </div>
+            <p>商业静物 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card "
+        data-kind="commercial"
+        data-project-id="06"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="06"
+          aria-label="查看望山楂 · 红色饮品广告项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/product-hawthorn.webp"
+              alt="望山楂 · 红色饮品广告"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>06</span>
+              <h3>望山楂 · 红色饮品广告</h3>
+            </div>
+            <p>商业静物 / 2024</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="white"
+        data-project-id="07"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="07"
+          aria-label="查看精密金属结构项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/white-metal-part.webp"
+              alt="精密金属结构"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>07</span>
+              <h3>精密金属结构</h3>
+            </div>
+            <p>白底产品图 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card "
+        data-kind="white"
+        data-project-id="08"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="08"
+          aria-label="查看铝制容器组合项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/white-aluminum-tins.webp"
+              alt="铝制容器组合"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>08</span>
+              <h3>铝制容器组合</h3>
+            </div>
+            <p>白底产品图 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="white"
+        data-project-id="09"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="09"
+          aria-label="查看电钻 · 电商白底图项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/white-drill.webp"
+              alt="电钻 · 电商白底图"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>09</span>
+              <h3>电钻 · 电商白底图</h3>
+            </div>
+            <p>白底产品图 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--landscape"
+        data-kind="white"
+        data-project-id="10"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="10"
+          aria-label="查看无刷爬绳升降机项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/white-rope-lift.webp"
+              alt="无刷爬绳升降机"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>10</span>
+              <h3>无刷爬绳升降机</h3>
+            </div>
+            <p>白底产品图 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="poster"
+        data-project-id="11"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="11"
+          aria-label="查看秋分 · 品牌节气海报项目"
+        >
+          <div class="project-image">
+            <img
+              src="./images/work/poster-autumn.webp"
+              alt="秋分 · 品牌节气海报"
+              loading="lazy"
+            />
+            
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>11</span>
+              <h3>秋分 · 品牌节气海报</h3>
+            </div>
+            <p>视觉海报 / 2024</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="video"
+        data-project-id="12"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="12"
+          aria-label="查看鸭血烩豆腐 · 美食教学项目"
+        >
+          <div class="project-image project-image--video">
+            <img
+              src="./images/video/duck-blood-tofu.webp"
+              alt="鸭血烩豆腐 · 美食教学"
+              loading="lazy"
+            />
+            
+  <div class="video-cover" aria-hidden="true">
+    <div class="video-cover__top">
+      <span>WZ / MOTION</span>
+      <span>PROJECT 12</span>
+    </div>
+    <div class="video-cover__title">
+      <p>美食教学视频</p>
+      <h4>鸭血烩豆腐 · 美食教学</h4>
+    </div>
+    <div class="video-cover__footer">
+      <span class="video-cover__play">▶</span>
+      <p>PLAY FILM</p>
+      <span>01:59</span>
+    </div>
+  </div>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>12</span>
+              <h3>鸭血烩豆腐 · 美食教学</h3>
+            </div>
+            <p>美食教学视频 / 2024</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="video"
+        data-project-id="13"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="13"
+          aria-label="查看营养补充剂 · 电商短片项目"
+        >
+          <div class="project-image project-image--video">
+            <img
+              src="./images/video/supplement-product.webp"
+              alt="营养补充剂 · 电商短片"
+              loading="lazy"
+            />
+            
+  <div class="video-cover" aria-hidden="true">
+    <div class="video-cover__top">
+      <span>WZ / MOTION</span>
+      <span>PROJECT 13</span>
+    </div>
+    <div class="video-cover__title">
+      <p>电商主图视频</p>
+      <h4>营养补充剂 · 电商短片</h4>
+    </div>
+    <div class="video-cover__footer">
+      <span class="video-cover__play">▶</span>
+      <p>PLAY FILM</p>
+      <span>00:30</span>
+    </div>
+  </div>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>13</span>
+              <h3>营养补充剂 · 电商短片</h3>
+            </div>
+            <p>电商主图视频 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="video"
+        data-project-id="14"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="14"
+          aria-label="查看焕彩自喷漆 · 产品演示项目"
+        >
+          <div class="project-image project-image--video">
+            <img
+              src="./images/video/metal-spray-paint.webp"
+              alt="焕彩自喷漆 · 产品演示"
+              loading="lazy"
+            />
+            
+  <div class="video-cover" aria-hidden="true">
+    <div class="video-cover__top">
+      <span>WZ / MOTION</span>
+      <span>PROJECT 14</span>
+    </div>
+    <div class="video-cover__title">
+      <p>工业品功能视频</p>
+      <h4>焕彩自喷漆 · 产品演示</h4>
+    </div>
+    <div class="video-cover__footer">
+      <span class="video-cover__play">▶</span>
+      <p>PLAY FILM</p>
+      <span>00:40</span>
+    </div>
+  </div>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>14</span>
+              <h3>焕彩自喷漆 · 产品演示</h3>
+            </div>
+            <p>工业品功能视频 / 2025—2026</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="video"
+        data-project-id="15"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="15"
+          aria-label="查看美津浓 · 面料科技项目"
+        >
+          <div class="project-image project-image--video">
+            <img
+              src="./images/video/mizuno-fabric.webp"
+              alt="美津浓 · 面料科技"
+              loading="lazy"
+            />
+            
+  <div class="video-cover" aria-hidden="true">
+    <div class="video-cover__top">
+      <span>WZ / MOTION</span>
+      <span>PROJECT 15</span>
+    </div>
+    <div class="video-cover__title">
+      <p>品牌产品视频</p>
+      <h4>美津浓 · 面料科技</h4>
+    </div>
+    <div class="video-cover__footer">
+      <span class="video-cover__play">▶</span>
+      <p>PLAY FILM</p>
+      <span>00:23</span>
+    </div>
+  </div>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>15</span>
+              <h3>美津浓 · 面料科技</h3>
+            </div>
+            <p>品牌产品视频 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--landscape"
+        data-kind="video"
+        data-project-id="16"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="16"
+          aria-label="查看牧食益 · 食品生产纪实项目"
+        >
+          <div class="project-image project-image--video">
+            <img
+              src="./images/video/mushiyi-production.webp"
+              alt="牧食益 · 食品生产纪实"
+              loading="lazy"
+            />
+            
+  <div class="video-cover" aria-hidden="true">
+    <div class="video-cover__top">
+      <span>WZ / MOTION</span>
+      <span>PROJECT 16</span>
+    </div>
+    <div class="video-cover__title">
+      <p>品牌纪实视频</p>
+      <h4>牧食益 · 食品生产纪实</h4>
+    </div>
+    <div class="video-cover__footer">
+      <span class="video-cover__play">▶</span>
+      <p>PLAY FILM</p>
+      <span>00:33</span>
+    </div>
+  </div>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>16</span>
+              <h3>牧食益 · 食品生产纪实</h3>
+            </div>
+            <p>品牌纪实视频 / 2025</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="video"
+        data-project-id="17"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="17"
+          aria-label="查看欧阳修 · 木器美颜漆项目"
+        >
+          <div class="project-image project-image--video">
+            <img
+              src="./images/video/wood-paint.webp"
+              alt="欧阳修 · 木器美颜漆"
+              loading="lazy"
+            />
+            
+  <div class="video-cover" aria-hidden="true">
+    <div class="video-cover__top">
+      <span>WZ / MOTION</span>
+      <span>PROJECT 17</span>
+    </div>
+    <div class="video-cover__title">
+      <p>家居修护视频</p>
+      <h4>欧阳修 · 木器美颜漆</h4>
+    </div>
+    <div class="video-cover__footer">
+      <span class="video-cover__play">▶</span>
+      <p>PLAY FILM</p>
+      <span>00:46</span>
+    </div>
+  </div>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>17</span>
+              <h3>欧阳修 · 木器美颜漆</h3>
+            </div>
+            <p>家居修护视频 / 2026</p>
+          </div>
+        </button>
+      </article>
+    
+      <article
+        class="project-card project-card--tall"
+        data-kind="video"
+        data-project-id="18"
+      >
+        <button
+          type="button"
+          class="project-open"
+          data-project-id="18"
+          aria-label="查看永安固 · 免打磨固锈剂项目"
+        >
+          <div class="project-image project-image--video">
+            <img
+              src="./images/video/rust-agent.webp"
+              alt="永安固 · 免打磨固锈剂"
+              loading="lazy"
+            />
+            
+  <div class="video-cover" aria-hidden="true">
+    <div class="video-cover__top">
+      <span>WZ / MOTION</span>
+      <span>PROJECT 18</span>
+    </div>
+    <div class="video-cover__title">
+      <p>工业品功能视频</p>
+      <h4>永安固 · 免打磨固锈剂</h4>
+    </div>
+    <div class="video-cover__footer">
+      <span class="video-cover__play">▶</span>
+      <p>PLAY FILM</p>
+      <span>00:41</span>
+    </div>
+  </div>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span>18</span>
+              <h3>永安固 · 免打磨固锈剂</h3>
+            </div>
+            <p>工业品功能视频 / 2026</p>
+          </div>
+        </button>
+      </article>
+    
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <p class="section-index">02 — PROFILE</p>
+        <div class="about-layout">
+          <h2>不只是拍得好看，<br />更理解平台与转化。</h2>
+          <div class="about-copy">
+            <p>
+              我是王政，一名拥有 2 年多一线拍摄剪辑经验的商业摄影师，熟练掌握从前期策划、现场拍摄到后期剪辑、包装调色的完整工作流。
+            </p>
+            <p>
+              服务过食品、家居修护、工业工具与快消产品，能将功能、使用场景和核心卖点转化为直观的平面与视频画面。
+            </p>
+            <div class="capability-list" aria-label="专业能力">
+              <span>食品与产品静物</span>
+              <span>电商白底图</span>
+              <span>场景与道具搭建</span>
+              <span>脚本与分镜设计</span>
+              <span>灯光与机位规划</span>
+              <span>剪辑包装与调色</span>
+              <span>商业精修</span>
+              <span>AI 视觉工作流</span>
+            </div>
+            <a
+              class="resume-button"
+              href="./wang-zheng-resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              查看完整简历 PDF <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience">
+        <p class="section-index">03 — EXPERIENCE</p>
+        <div class="experience-row">
+          <p class="experience-date">2025.05 — 2026.07</p>
+          <div>
+            <h3>福州极缮科技有限公司</h3>
+            <p>拍摄剪辑师</p>
+          </div>
+          <p class="experience-detail">
+            根据淘宝、天猫、京东与抖音平台需求，策划并拍摄主图视频、详情页视频、白底图、场景图和产品细节图；独立完成脚本拆解、分镜、场景搭建、灯光与机位规划，并将 AI 工具应用于视觉预演。
+          </p>
+        </div>
+        <div class="experience-row">
+          <p class="experience-date">2024.03 — 2025.05</p>
+          <div>
+            <h3>福建围锅食品科技有限公司</h3>
+            <p>拍摄剪辑师</p>
+          </div>
+          <p class="experience-detail">
+            负责公司产品图、海报、广告片及美食教学视频制作；独立运营品牌社交媒体账号，系统构建视频素材库，连续产出 20+ 期美食教学内容。
+          </p>
+        </div>
+
+        <div class="resume-extra-grid">
+          <article>
+            <p class="section-index">SELECTED PROJECT</p>
+            <h3>美津浓季度产品宣传视频</h3>
+            <p>摄影师 · 2025.05</p>
+          </article>
+          <article>
+            <p class="section-index">EDUCATION</p>
+            <h3>阳光学院 · 广告学</h3>
+            <p>本科 · 2022—2024</p>
+          </article>
+        </div>
+      </section>
+
+      <footer id="contact">
+        <p class="section-index">04 — CONTACT</p>
+        <div class="footer-main">
+          <h2>一起做点<br />有质感的作品。</h2>
+          <div class="contact-block">
+            <p>AVAILABLE FOR SELECTED PROJECTS</p>
+            <a href="mailto:2830370067@qq.com">
+              2830370067@qq.com <span>↗</span>
+            </a>
+            <a href="tel:17689224085">
+              176 8922 4085 <span>↗</span>
+            </a>
+            <p class="contact-note">福州 · 摄影 / 摄像 / 商业内容合作</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>WANG ZHENG VISUAL PORTFOLIO</p>
+          <a href="#top">BACK TO TOP ↑</a>
+          <p>FUZHOU · 2026</p>
+        </div>
+      </footer>
+
+      <div
+        class="project-modal"
+        id="project-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-modal-title"
+        hidden
+      >
+        <div class="modal-panel">
+          <button class="modal-close" id="modal-close" type="button" aria-label="关闭项目详情">
+            CLOSE ×
+          </button>
+          <div class="modal-media" id="modal-media"></div>
+          <div class="modal-copy">
+            <p class="section-index" id="modal-index"></p>
+            <h2 id="project-modal-title"></h2>
+            <p id="modal-description"></p>
+            <div class="modal-details" id="modal-details"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const projects = [{"id":"01","title":"荔枝肉 · 热气氛围","category":"食品摄影","year":"2024","image":"/images/work/food-litchi-pork.webp","className":"project-card--tall","kind":"food","kindLabel":"食品","role":"摄影 / 布光 / 后期","description":"以暖色侧逆光、升腾热气和筷子夹取动作表现刚出锅的温度与酱汁光泽，让传统闽菜更具食欲和画面叙事。"},{"id":"02","title":"花蛤蒸蛋 · 浇汁瞬间","category":"食品摄影","year":"2024","image":"/images/work/food-clam-egg.webp","className":"","kind":"food","kindLabel":"食品","role":"摄影 / 场景 / 后期","description":"通过浇汁动作建立画面动势，利用低饱和陶器与暖色桌布衬托蒸蛋质感，兼顾菜品细节和中式餐饮氛围。"},{"id":"03","title":"牛肉丸粿条 · 暖冬","category":"食品摄影","year":"2024","image":"/images/work/food-beef-noodle.webp","className":"project-card--tall","kind":"food","kindLabel":"食品","role":"摄影 / 造景 / 后期","description":"以木质托盘、铜壶和窗格光构建温暖食桌，突出清汤、粿条和牛肉丸的层次，呈现真实生活感。"},{"id":"04","title":"AHC · 草本护肤静物","category":"商业静物","year":"2025","image":"/images/work/product-ahc.webp","className":"","kind":"commercial","kindLabel":"商业静物","role":"摄影 / 美术 / 后期","description":"以岩石、花材和金黄色渐变背景建立草本护肤语境，通过轮廓光和材质对比突出琥珀瓶身。"},{"id":"05","title":"洗护产品 · 自然配方","category":"商业静物","year":"2025","image":"/images/work/product-shampoo.webp","className":"project-card--tall","kind":"commercial","kindLabel":"商业静物","role":"摄影 / 场景 / 后期","description":"使用梨、花材、青柠与火山石建立配方联想，暖调窗影增强空间层次和产品的自然感。"},{"id":"06","title":"望山楂 · 红色饮品广告","category":"商业静物","year":"2024","image":"/images/work/product-hawthorn.webp","className":"","kind":"commercial","kindLabel":"商业静物","role":"摄影 / 布光 / 后期","description":"以统一红色调和高反差轮廓光强化品牌识别，利用山楂果实建立原料关联，适用于电商与社交媒体传播。"},{"id":"07","title":"精密金属结构","category":"白底产品图","year":"2025","image":"/images/work/white-metal-part.webp","className":"project-card--tall","kind":"white","kindLabel":"白底图","role":"摄影 / 堆栈 / 精修","description":"通过多灯位控制金属高光与边缘轮廓，保留机械零件表面纹理，并以倒影强化结构和精密感。"},{"id":"08","title":"铝制容器组合","category":"白底产品图","year":"2025","image":"/images/work/white-aluminum-tins.webp","className":"","kind":"white","kindLabel":"白底图","role":"摄影 / 布光 / 精修","description":"针对哑光铝材控制大面积反光，清晰呈现螺纹、开口与盖体结构，满足电商详情页信息展示。"},{"id":"09","title":"电钻 · 电商白底图","category":"白底产品图","year":"2025","image":"/images/work/white-drill.webp","className":"project-card--tall","kind":"white","kindLabel":"白底图","role":"摄影 / 布光 / 精修","description":"使用软硬光组合表现塑胶、金属和橡胶材质差异，确保产品细节、品牌信息与轮廓清晰。"},{"id":"10","title":"无刷爬绳升降机","category":"白底产品图","year":"2025","image":"/images/work/white-rope-lift.webp","className":"project-card--landscape","kind":"white","kindLabel":"白底图","role":"摄影 / 布光 / 精修","description":"通过三分之四视角完整呈现工业产品体积、接口与标识，保持黑色机身层次和背景洁净度。"},{"id":"11","title":"秋分 · 品牌节气海报","category":"视觉海报","year":"2024","image":"/images/work/poster-autumn.webp","className":"project-card--tall","kind":"poster","kindLabel":"海报","role":"摄影 / 合成 / 设计","description":"将食品摄影与传统节气视觉结合，通过中式建筑、银杏与暖黄色调完成品牌社交媒体海报。"},{"id":"12","title":"鸭血烩豆腐 · 美食教学","category":"美食教学视频","year":"2024","image":"/images/video/duck-blood-tofu.webp","video":"/videos/duck-blood-tofu.mp4","duration":"01:59","className":"project-card--tall","kind":"video","kindLabel":"视频","role":"策划 / 拍摄 / 剪辑","description":"从成品热气与食欲特写切入，完整呈现切配、烹饪和出锅过程；以近景动作、步骤字幕和节奏剪辑构成适合短视频平台的美食教学内容。"},{"id":"13","title":"营养补充剂 · 电商短片","category":"电商主图视频","year":"2025","image":"/images/video/supplement-product.webp","video":"/videos/supplement-product.mp4","duration":"00:30","className":"project-card--tall","kind":"video","kindLabel":"视频","role":"拍摄 / 场景 / 剪辑","description":"围绕礼盒开箱、产品陈列与使用动作组织镜头，使用明亮生活化场景快速展示包装和组合信息，适配移动端电商传播。"},{"id":"14","title":"焕彩自喷漆 · 产品演示","category":"工业品功能视频","year":"2025—2026","image":"/images/video/metal-spray-paint.webp","video":"/videos/metal-spray-paint.mp4","duration":"00:40","className":"project-card--tall","kind":"video","kindLabel":"视频","role":"策划 / 拍摄 / 剪辑","description":"将罐体质感、喷涂动作、色彩效果和实际使用场景串联，在短时长内建立产品识别并直观解释覆盖力与焕新效果。"},{"id":"15","title":"美津浓 · 面料科技","category":"品牌产品视频","year":"2025","image":"/images/video/mizuno-fabric.webp","video":"/videos/mizuno-fabric.mp4","duration":"00:23","className":"project-card--tall","kind":"video","kindLabel":"视频","role":"摄影 / 灯光 / 剪辑","description":"以面料微距、动态演示和图形包装表现渐变纹理、吸湿排汗与弹力结构，把抽象科技卖点转化为可见的材质体验。"},{"id":"16","title":"牧食益 · 食品生产纪实","category":"品牌纪实视频","year":"2025","image":"/images/video/mushiyi-production.webp","video":"/videos/mushiyi-production.mp4","duration":"00:33","className":"project-card--landscape","kind":"video","kindLabel":"视频","role":"拍摄 / 现场 / 剪辑","description":"进入食品生产现场记录人员规范、原料处理和设备加工环节，通过真实流程与细节镜头传达品牌的生产能力和品质意识。"},{"id":"17","title":"欧阳修 · 木器美颜漆","category":"家居修护视频","year":"2026","image":"/images/video/wood-paint.webp","video":"/videos/wood-paint.mp4","duration":"00:46","className":"project-card--tall","kind":"video","kindLabel":"视频","role":"策划 / 拍摄 / 剪辑","description":"以旧门问题、开盖即刷和翻新前后对比为叙事主线，结合家居人物场景突出操作便捷、遮盖力和焕新效果。"},{"id":"18","title":"永安固 · 免打磨固锈剂","category":"工业品功能视频","year":"2026","image":"/images/video/rust-agent.webp","video":"/videos/rust-agent.mp4","duration":"00:41","className":"project-card--tall","kind":"video","kindLabel":"视频","role":"策划 / 拍摄 / 剪辑","description":"通过锈蚀痛点、刷涂过程、耐候场景和检测信息展开功能演示，配合统一品牌版式，让复杂工业卖点更容易理解。"}];
+      const modal = document.getElementById("project-modal");
+      const modalMedia = document.getElementById("modal-media");
+      const modalIndex = document.getElementById("modal-index");
+      const modalTitle = document.getElementById("project-modal-title");
+      const modalDescription = document.getElementById("modal-description");
+      const modalDetails = document.getElementById("modal-details");
+      const projectCount = document.getElementById("project-count");
+
+      const escapeHtml = (value = "") =>
+        String(value)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+
+      const assetPath = (value) => "." + value;
+
+      const videoCover = (project) => `
+        <div class="video-cover video-cover--modal" aria-hidden="true">
+          <div class="video-cover__top">
+            <span>WZ / MOTION</span>
+            <span>PROJECT ${escapeHtml(project.id)}</span>
+          </div>
+          <div class="video-cover__title">
+            <p>${escapeHtml(project.category)}</p>
+            <h4>${escapeHtml(project.title)}</h4>
+          </div>
+          <div class="video-cover__footer">
+            <span class="video-cover__play">▶</span>
+            <p>PLAY FILM</p>
+            <span>${escapeHtml(project.duration || "")}</span>
+          </div>
+        </div>
+      `;
+
+      const playVideo = (project) => {
+        modalMedia.innerHTML = "";
+        const video = document.createElement("video");
+        video.controls = true;
+        video.autoplay = true;
+        video.playsInline = true;
+        video.preload = "metadata";
+        video.poster = assetPath(project.image);
+        video.src = assetPath(project.video);
+        video.setAttribute("aria-label", project.title + "视频");
+        video.textContent = "你的浏览器暂不支持视频播放。";
+        modalMedia.append(video);
+        video.play().catch(() => {});
+      };
+
+      const openProject = (projectId) => {
+        const project = projects.find((item) => item.id === projectId);
+        if (!project) return;
+
+        modalIndex.textContent = `${project.id} — ${project.kindLabel} / ${project.year}`;
+        modalTitle.textContent = project.title;
+        modalDescription.textContent = project.description;
+        modalDetails.innerHTML = `
+          <span>ROLE</span>
+          <p>${escapeHtml(project.role)}</p>
+          <span>TYPE</span>
+          <p>${escapeHtml(project.category)}</p>
+          ${project.duration ? `<span>DURATION</span><p>${escapeHtml(project.duration)}</p>` : ""}
+        `;
+
+        if (project.video) {
+          modalMedia.innerHTML = `
+            <button
+              class="modal-video-cover"
+              type="button"
+              aria-label="播放${escapeHtml(project.title)}"
+            >
+              <img src="${assetPath(project.image)}" alt="" />
+              ${videoCover(project)}
+            </button>
+          `;
+          modalMedia
+            .querySelector(".modal-video-cover")
+            .addEventListener("click", () => playVideo(project));
+        } else {
+          modalMedia.innerHTML = `
+            <img src="${assetPath(project.image)}" alt="${escapeHtml(project.title)}" />
+          `;
+        }
+
+        modal.hidden = false;
+        document.body.classList.add("modal-open");
+      };
+
+      const closeModal = () => {
+        const video = modalMedia.querySelector("video");
+        if (video) video.pause();
+        modalMedia.innerHTML = "";
+        modal.hidden = true;
+        document.body.classList.remove("modal-open");
+      };
+
+      document.querySelectorAll(".project-open").forEach((button) => {
+        button.addEventListener("click", () => openProject(button.dataset.projectId));
+      });
+
+      document.querySelectorAll("[data-filter]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const activeFilter = button.dataset.filter;
+          let visibleCount = 0;
+
+          document.querySelectorAll("[data-filter]").forEach((item) => {
+            item.classList.toggle("is-active", item === button);
+          });
+
+          document.querySelectorAll(".project-card").forEach((card) => {
+            const isVisible = activeFilter === "all" || card.dataset.kind === activeFilter;
+            card.hidden = !isVisible;
+            if (isVisible) visibleCount += 1;
+          });
+
+          projectCount.textContent = String(visibleCount).padStart(2, "0");
+        });
+      });
+
+      document.getElementById("modal-close").addEventListener("click", closeModal);
+      modal.addEventListener("mousedown", (event) => {
+        if (event.target === modal) closeModal();
+      });
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !modal.hidden) closeModal();
+      });
+    </script>
+  </body>
+</html>
