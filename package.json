@@ -1,0 +1,8 @@
+{
+  "name": "wz-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r images videos dist/ && cp index.html favicon.svg file.svg globe.svg window.svg wang-zheng-resume.pdf dist/"
+  }
+}
